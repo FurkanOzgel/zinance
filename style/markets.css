@@ -1,4 +1,4 @@
-.stock_container {
+.stock-container {
     background-color: #1E2732;
     margin: 10px;
     width: calc(33% - 20px);
@@ -15,6 +15,7 @@
 .market-name {
     margin-top: 5px;
     user-select: none;
+    text-align: center;
 }
 
 img {
@@ -23,7 +24,7 @@ img {
     border-radius: 100%;
 }
 
-.main_container {
+.main-container {
     display: flex;
     flex-wrap: wrap;
 }
