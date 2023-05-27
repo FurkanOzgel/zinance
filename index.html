@@ -8,84 +8,50 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>zinance</title>
     <script src="js/include.js"></script>
-    <style>
-        img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 700px;
-        height: 500px;
-        
-}
-#button1 {
-    background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  word-wrap: break-word;
-  position: absolute;
-  left: 650px;
-  right: 550px;
-}
-#button2{
-    background-color: #9fd3c7; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  word-wrap: break-word;
-  position: relative;
-  left: 500px;
-  right: 600px;
-} 
-p{
-    font-size: 20px;
-    word-spacing: 5px;
-}
-p.fixed {
-position: fixed;
-top: 30px;
-right: 20px;
-}
-
- 
-    </style>
 </head>
 <body>
-    <!--CSS sonradan eklenicek şuan sadece iskelti yapılacak-->
-    <div class="main-container"></div>
-    <img src="images/zinance.jpeg">
-    <button id="button1">Kayıt ol</button>
-    <button id="button2"> Giriş yap</button>
-<div>
-    <div id="div1">
-    <p>
-        Zinance nedir?
-        <br>
-        Zinance, kendini yatırım yapmaya hazır hissetmeyen, kendini geliştirmek isteyek isteyen insanların hiç bir para yatırmadan sanal parayla alıştırma yapmasını sağlar. Bu konuda uzman olan kişilerin bloglarını ve ipuçlarını okuyarak tecrübe edebileceği yatırım-blog sitesidir.  
-     </p>
-     </div>
-    <div id="div1">
-    <p>Neden Zinance?<br>
-       Yatırım yapmaya korkuyorsanız veya bir bilginiz yok ise Zinance da denemeler yapabilirsiniz. Diğer yatırım siteleri gibi gerçek para yatırılmadığı için maddi bir kayıp yaşanmaz ve riske girilmez. Uzmanlar tarafından yazılanlar bloglar sayesinde uzman tavsiyesi alınabilir ve bu sayede daha çok bilgi sahibi olabilir. 
-    </p>
-    </div>   
-    <div id="div1">
-    <p>
-        Zinance'da ne yapabilirsiniz?
-        <br>
-        Zinance'da döviz,bitcoin gibi kurlarda tam zamanlı olarak deneme yapılabilir. Borsa,döviz hakkında ki haberlere kolayca ulaşabilir. Eğer uzmansanız kendiniz blog yazıp diğer insanlara öncülük edebilir onlara bir öğretmen olabilirsiniz.
-    </p>
+    
+<div id="mySidenav" class="sidenav">
+    <div id="profile-container">
+        <img id="profile-img" src="../images/profile.jpg">
+    </div>
+    <div id="link-container">
+        <a href="dashboard.html" id="dashboard">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentColor">
+                <path d="M180 936q-24.75 0-42.375-17.625T120 876V276q0-24.75 17.625-42.375T180 216h600q24.75 0 42.375 17.625T840 276v600q0 24.75-17.625 42.375T780 936H180Zm230-60V606H180v270h230Zm60 0h310V606H470v270ZM180 546h600V276H180v270Z"/>
+            </svg>
+            &nbsp;Dashboard
+        </a>
+        
+        <a href="markets.html" id="markets">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentColor">
+                <path d="M120 936v-76l60-60v136h-60Zm165 0V700l60-60v296h-60Zm165 0V640l60 61v235h-60Zm165 0V701l60-60v295h-60Zm165 0V540l60-60v456h-60ZM120 700v-85l280-278 160 160 280-281v85L560 582 400 422 120 700Z"/>
+            </svg>
+            &nbsp;Piyasalar
+        </a>
+        
+        <a href="blogs.html" id="blogs">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentColor">
+                <path d="M277 777h275v-60H277v60Zm0-171h406v-60H277v60Zm0-171h406v-60H277v60Zm-97 501q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600V276H180v600Zm0-600v600-600Z"/>
+            </svg>
+            &nbsp;Bloglar
+        </a>
+        
+        <a href="settings.html" id="settings">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentColor">
+                <path d="m388 976-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185 576q0-9 .5-20.5T188 535L80 456l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669 346l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592 850l-20 126H388Zm92-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410 576q0-29 20.5-49.5T480 506q29 0 49.5 20.5T550 576q0 29-20.5 49.5T480 646Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715 576q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538 348l-14-112h-88l-14 112q-34 7-63.5 24T306 414l-106-46-40 72 94 69q-4 17-6.5 33.5T245 576q0 17 2.5 33.5T254 643l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z"/>
+            </svg>
+            &nbsp;Ayarlar
+        </a>
+
+    </div>
+
+    <div id="brand">
+        <img id="logo" src="../images/logo_transparant.png">
     </div>
 </div>
 
+    <div class="main-container">yazı</div>
     
 </body>
 <script>
