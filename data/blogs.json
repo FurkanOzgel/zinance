@@ -1,0 +1,86 @@
+[
+    {
+        "symbol": "BTC",
+        "name": "Elon Musk'ın Piyasaya Yön Verdi",
+        "des.": "",
+        "price_data":[],
+        "in_time": "14",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "crypto",
+        "starting_date": "",
+        "ending_date": ""
+
+    },
+    {
+        "symbol": "ODAŞ",
+        "name": "EPPDK'nin Cezası Hissenin Tüm Gidişatını Bozdu",
+        "des.": "",
+        "price_data":[],
+        "in_time": "",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "bist",
+        "starting_date": "",
+        "ending_date": ""
+
+    },
+    {
+        "symbol": "ETH",
+        "name": "Etherium'un Yeni Güncellemesi Olumlu Bir Hava Yarattı",
+        "des.": "",
+        "price_data":[],
+        "in_time": "",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "crypto",
+        "starting_date": "",
+        "ending_date": ""
+
+    },
+    {
+        "symbol": "SASA",
+        "name": "Bilanço Yanıltmadı",
+        "des.": "",
+        "price_data":[],
+        "in_time": "",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "bist",
+        "starting_date": "",
+        "ending_date": ""
+
+    },
+    {
+        "symbol": "GAU",
+        "name": "Bankacılık Krizinin Yükselişi Tetikledi",
+        "des.": "",
+        "price_data":[],
+        "in_time": "",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "kıymetli_metal",
+        "starting_date": "",
+        "ending_date": ""
+
+    },
+    {
+        "symbol": "MSFT",
+        "name": "Yeni Satın Alım Sinyalleri Fiyatları Yukarı Çekti",
+        "des.": "",
+        "price_data":[],
+        "in_time": "",
+        "percentage":20,
+        "author": "Yiğitcan Çapraz",
+        "url":"www.facebook.com",
+        "type": "crypto",
+        "starting_date": "",
+        "ending_date": ""
+
+    }
+]
