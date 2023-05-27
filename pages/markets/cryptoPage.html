@@ -12,7 +12,7 @@
 
     <script>
         function goDetailPage(item) {
-            window.location.href = "coinDetail.html?coin="+item.childNodes[1].innerHTML;
+            window.location.href = "coinDetail.html?coin="+item.childNodes[1].innerHTML.slice(item.childNodes[1].innerHTML.indexOf(">")+1).replace(/\s/g, '');
         }
     </script>
     
@@ -57,18 +57,24 @@
             <div class="market-summary">
                 <span>Öne Çıkan Coinler</span>
                 <div style="margin: 10px;">
-                    <div style="display: flex; justify-content: space-between;">
-                        <span class="symbol">BTC</span>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 7px;">
+                        <span class="symbol">
+                            <img style="width: 24px; height: 24px;" class="icon" src="../../images/crypto_icons/btc.png"> 
+                            BTC</span>
                         <span class="price">₺559.312</span>
                         <span class="change increase">0.29%</span>
                     </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <span class="symbol">ETH</span>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 7px;">
+                        <span class="symbol">
+                            <img style="width: 24px; height: 24px;" class="icon" src="../../images/crypto_icons/eth.png">
+                            ETH</span>
                         <span class="price">₺37.864</span>
                         <span class="change increase">0,65%</span>
                     </div>
                     <div style="display: flex; justify-content: space-between;">
-                        <span class="symbol">DOGE</span>
+                        <span class="symbol">
+                            <img style="width: 24px; height: 24px;" class="icon" src="../../images/crypto_icons/doge.png">
+                            DOGE</span>
                         <span class="price">₺1,51</span>
                         <span class="change increase">0,9%</span>
                     </div>

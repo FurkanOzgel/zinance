@@ -22,6 +22,13 @@
 
 .symbol {
     width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.icon {
+    width: 32px; height:32px; margin-right: 7px;
 }
 
 .price {
@@ -32,6 +39,7 @@
     width: 50%;
     display: inline-flex;
     justify-content: end;
+    font-weight: 800;
 }
 
 .title-bar {
@@ -49,7 +57,8 @@
 .coin-list-item {
     display:flex;
     justify-content: space-between;
-    padding: 10px
+    padding: 10px;
+    width:100%;
 }
 
 .coin-list-item:hover {
@@ -64,24 +73,37 @@
 
 .item-symbol {
     width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
 }
 
 .item-price {
     width: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
 .item-change {
     width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
 }
 
 #item-change-div {
     width: 55px;
     display: flex;
     justify-content: end;
+    align-items: center;
+    font-weight: 800;
 }
 
 .item-volume {
     width: 100%;
+    display: flex;
+    align-items: center;
 } 
 
 .increase {

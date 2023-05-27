@@ -1,0 +1,160 @@
+
+.icon {
+    width: 32px; height:32px; margin-right: 7px;
+}
+
+
+
+.title-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.coin-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-list-item {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+
+.title-item {
+    width: 100%;
+}
+
+.item-symbol {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.item-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.item-change {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+#item-change-div {
+    width: 55px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 800;
+}
+
+.item-volume {
+    width: 100%;
+    display: flex;
+    align-items: center;
+} 
+
+.increase {
+    color:green;
+}
+
+.down {
+    color:red;
+}
+
+.order-container {
+    margin: 20px;
+    display: flex;
+    background-color: #1E2732;
+    width: calc(30% - 40px);
+    border-radius: 25px;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.input-container {
+    padding: 5px;
+    display: flex;
+    margin: 20px;
+    background-color: #15202B;
+    border-width: 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    align-items: center;
+    height: 30px;
+}
+
+.input-label {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color: #15202B;
+    border-width: 0px;
+    color: white;
+    margin-left: 4px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+
+.order-type-container {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 40px;
+    font-weight: bold;
+}
+
+.buy-active {
+    background-color: green;
+}
+
+.sell-active {
+    background-color: red;
+}
+
+#order-btn {
+    margin: 20px;
+    height: 40px;
+    border-radius: 30px;
+    border-width: 0px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    width: 70px;
+    text-align: center;
+}

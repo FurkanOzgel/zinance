@@ -72,4 +72,10 @@
         height: 150px;
         width: 150px;
     }
+    #link-container {
+        margin-top: 20px;
+    }
+    #brand {
+        display: none;
+    }
 }

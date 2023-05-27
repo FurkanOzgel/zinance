@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../style/sidebar.css">
-    <link rel="stylesheet" href="../../style/theme.css">
-    <link rel="stylesheet" href="../../style/markets/detail_page.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/sidebar.css">
+    <link rel="stylesheet" href="../../style/theme.css">
+    <link rel="stylesheet" href="../../style/markets/detail_page.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.stock.min.js"></script>
 </head>
 <body>
-   
     <!-- Start Sidebar -->
     <div id="mySidenav" class="sidenav">
         <div id="profile-container">
@@ -44,10 +44,39 @@
         </div>
     </div>
     <!-- End Sidebar -->
+    <div class="main-container" style="display: flex;">
+    
+        <div style="width: 70%;">
+            <div class="title-bar">
+                <span class="title-item"></span>
+                <span class="title-item">Fiyat</span>
+            <span class="title-item">Değişim</span>
+            <span class="title-item">24S Hacim</span>
+            </div>
+            <div class="coin-list"></div>
+            <div id="chartContainer" style="height: 75vh; width: 100%; margin-top: 30px;"> </div>
+        </div>
+        <div class="order-container">
+            <div style="display: flex; flex-direction: row; margin: 20px; margin-top: 30px;">
+                <div class="order-type-container buy-active">Al</div>
+                <div class="order-type-container">Sat</div>
+            </div>
+            <div class="input-container">
+                <div class="input-label" ><div style="width: 100%; display:flex ; justify-content: baseline;">Fiyat</div> :</div>
+                <input id="price" type="text"><p>₺</p>
+            </div>
+            <div class="input-container">
+                <div class="input-label"><div style="width: 100%; display:flex ; justify-content: baseline;">Miktar</div> :</div>
+                <input type="price">
+            </div>
+            <div class="input-container">
+                <div class="input-label"><div style="width: 100%; display:flex ; justify-content: baseline;">Toplam Tutar</div> :</div>
+                <input type="text"><p>₺</p>
+            </div>
+            <button id="order-btn" onclick="give_order(this)">Satın Al</button>
+        </div>
 
-    <div class="main-container">
-        
+        <script type="text/javascript" src="../../js/coinDetailPage.js"></script>
     </div>
-    <script src="../../js/coinDetailPage.js"></script>
 </body>
 </html>
