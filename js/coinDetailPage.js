@@ -58,7 +58,6 @@ fetch('../../data/coinDetails.json')
         let data = JSON.parse(coin_data.data)
         let chart_data = [];
         let list;
-
         
 
         for(let i = 0; i < Object.keys(data.O).length; i ++){

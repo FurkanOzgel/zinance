@@ -1,0 +1,75 @@
+.blog-container {
+    background-color: #1E2732;
+    margin: 10px;
+    width: calc(33% - 60px);
+    padding: 20px;
+    border-radius: 25px;
+    padding-bottom: 15px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-container {
+    height: 40vh;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.blog-title {
+    margin-top: 15px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.blog-author {
+    margin-top: 5px;
+    color: #7f7f7f;
+    font-size: 15px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.blog-symbol {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-in_time {
+    margin-top: 5px;
+}
+
+.blog-date {
+    display: flex;
+    justify-content: end;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.increase-price {
+    color: green;
+}
+
+.falling-price {
+    color: red;
+}
