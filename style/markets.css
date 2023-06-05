@@ -13,9 +13,10 @@
 }
 
 .market-name {
-    margin-top: 5px;
-    user-select: none;
+    margin-top: 10px;
     text-align: center;
+    height: 20px;
+
 }
 
 img {
