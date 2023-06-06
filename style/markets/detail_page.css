@@ -68,11 +68,11 @@
 } 
 
 .increase {
-    color:green;
+    color:#03A66D;
 }
 
 .down {
-    color:red;
+    color:#CF304A;
 }
 
 .order-container {
@@ -136,11 +136,11 @@ input:focus {
 }
 
 .buy-active {
-    background-color: green;
+    background-color: #03A66D;
 }
 
 .sell-active {
-    background-color: red;
+    background-color: #CF304A;
 }
 
 #order-btn {
@@ -149,7 +149,7 @@ input:focus {
     border-radius: 30px;
     border-width: 0px;
     font-weight: bold;
-    background-color: green;
+    background-color: #03A66D;
     color: white;
 }
 

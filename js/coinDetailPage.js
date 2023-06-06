@@ -93,8 +93,8 @@ fetch('../../data/coinDetails.json')
                 data: [
                 {
                     type: "candlestick",
-                    risingColor: "green",
-                    fallingColor:"red",
+                    risingColor: "#03A66D",
+                    fallingColor:"#CF304A",
                     color:"white",
                     dataPoints: chart_data
                 }
@@ -110,7 +110,7 @@ document.getElementsByClassName("order-type-container")[0].addEventListener("cli
     document.getElementsByClassName("order-type-container")[0].classList.add("buy-active")
     document.getElementsByClassName("order-type-container")[1].classList.remove("sell-active")
     document.getElementById("order-btn").innerHTML = "Satın Al";
-    document.getElementById("order-btn").style.backgroundColor = "green";
+    document.getElementById("order-btn").style.backgroundColor = "#03A66D";
 
 })
 
@@ -118,7 +118,7 @@ document.getElementsByClassName("order-type-container")[1].addEventListener("cli
     document.getElementsByClassName("order-type-container")[1].classList.add("sell-active")
     document.getElementsByClassName("order-type-container")[0].classList.remove("buy-active")
     document.getElementById("order-btn").innerHTML = "Sat";
-    document.getElementById("order-btn").style.backgroundColor = "red"
+    document.getElementById("order-btn").style.backgroundColor = "#CF304A"
 })
 
 function give_order(order) {

@@ -5,13 +5,14 @@ fetch('../data/blogs.json')
         json.forEach((element, index) => {
             let div = document.createElement("div");
             div.innerHTML = `
-                <div>
-                    <div class="chart-container" id="chartContainer`+index+`"> </div>
+                <div style="">
                     <div class="blog-title">`+element.name+`</div>
-                    <div class="blog-author">`+element.author+`</div>
-                    <div class="blog-symbol"><span>`+element.symbol+`</span><span class="percentage-span">`+element.in_time+` `+element.percentage+`%</span></div>
-                    <div class="blog-in_time"></div>
-                    <div class="blog-date">10 Gün Önce</div>
+                    <div class="blog-author"><img src="../images/profile.jpg" style="height:20px;width:20px;border-radius:100%; margin-right:5px;">`+element.author+`</div>
+                    <div class="chart-container" id="chartContainer`+index+`"> </div>
+                    <div class="chart-bottom-container">
+                        <div class="blog-symbol"><span>`+element.symbol+`</span><span class="percentage-span">`+element.in_time+` `+element.percentage+`%</span></div>
+                        <div class="blog-date">`+ Math.floor((Date.now() - new Date(element.publish_date * 1000)) / (24 * 60 * 60 * 1000))+` Gün Önce</div>
+                    </div>
                 </div>
             `;
 
@@ -76,8 +77,8 @@ fetch('../data/blogs.json')
                     data: [
                     {
                         type: "candlestick",
-                        risingColor: "green",
-                        fallingColor:"red",
+                        risingColor: "#03A66D",
+                        fallingColor:"#CF304A",
                         color:"white",
                         dataPoints: chart_data
                     }

@@ -229,11 +229,12 @@
         },
         "in_time": "5d",
         "percentage":42,
-        "author": "Özgür Demirtaş",
-        "url":"www.facebook.com",
+        "author": "Ayşe Biçe Çalışkan",
+        "url":"",
         "type": "crypto",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1685955600"
 
     },
     {
@@ -652,10 +653,11 @@
         "in_time": "30d",
         "percentage":-33,
         "author": "Tuncay Turşucu",
-        "url":"www.facebook.com",
+        "url":"",
         "type": "bist",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1685869200"
 
     },
     {
@@ -1073,11 +1075,12 @@
         },
         "in_time": "5d",
         "percentage":16.3,
-        "author": "Yiğitcan Çapraz",
-        "url":"www.facebook.com",
+        "author": "Murat Borucu",
+        "url":"",
         "type": "crypto",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1685869200"
 
     },
     {
@@ -1310,11 +1313,12 @@
         },
         "in_time": "6m",
         "percentage":35,
-        "author": "Yiğitcan Çapraz",
-        "url":"www.facebook.com",
+        "author": "Sibel Gökalp",
+        "url":"",
         "type": "bist",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1685696400"
 
     },
     {
@@ -1732,11 +1736,12 @@
         },
         "in_time": "3m",
         "percentage":11.6,
-        "author": "Yiğitcan Çapraz",
-        "url":"www.facebook.com",
+        "author": "Özgür Demirtaş",
+        "url":"",
         "type": "kıymetli_metal",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1684746000"
 
     },
     {
@@ -1970,10 +1975,11 @@
         "in_time": "20d",
         "percentage":27.7,
         "author": "Yiğitcan Çapraz",
-        "url":"www.facebook.com",
+        "url":"",
         "type": "crypto",
         "starting_date": "",
-        "ending_date": ""
+        "ending_date": "",
+        "publish_date":"1684227600"
 
     }
 ]
