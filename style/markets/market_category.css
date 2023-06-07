@@ -9,7 +9,11 @@
     margin: 10px;
     padding: 15px;
     background-color: #1E2732;
-    border-radius: 15px;
+    border-radius: 15px;   
+}
+
+.summary-title {
+    font-weight: bold;
 }
 
 .all-coins {
@@ -46,6 +50,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .coin-list {
