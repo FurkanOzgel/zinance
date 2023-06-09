@@ -54,12 +54,30 @@
 
 .kar{
     color: green;
-    margin-left: 150px;
+    margin-left: 100px;
+}
+
+.karzarar-small-page{
+    width: 95%;
+    height: auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.karzarar-small-page:hover{
+    background-color: black;
 }
 
 .zarar{
     color: red;
-    margin-left: 150px;
+    margin-left: 100px;
+}
+
+.tarih{
+    margin-left: 120px;
 }
 
 .dashboard-small-page:hover{
