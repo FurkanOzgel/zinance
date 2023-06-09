@@ -1,0 +1,130 @@
+#dashboard-page-yatirim{
+    float: left;
+    width: 25%; 
+    height: auto;
+    background-color: #1E2732;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+#dashboard-page-encok{
+    margin-left: 10px;
+    float: left;
+    width: 45%;
+    height: 470px;
+    padding: 20px;
+    background-color: #1E2732;
+    border-radius: 40px;
+}
+
+#dashboard-page-karzarar{
+    float: left;
+    width: 18%; 
+    height: 470px;
+    background-color: #1E2732;
+    border-radius: 40px;
+    padding: 20px;   
+    margin-left: 10px;
+}
+
+.temizle{
+    clear: both;
+}
+
+#dashboard-page-blog{
+    position: absolute;
+    background-color: #1E2732;
+    padding: 20px;
+    margin-left: 370px;
+    margin-top: 530px;
+    border-radius: 40px;
+    width: 30%;
+    height: 120px;
+}
+
+#dashboard-page-yazarlar{
+    position: absolute;
+    background-color: #1E2732;
+    padding: 20px;
+    margin-left: 880px;
+    margin-top: 530px;
+    border-radius: 40px;
+    width: 22%;
+    height: 120px;
+}
+
+.dashboard-small-page{
+    width: 95%;
+    margin-top: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.kar{
+    color: green;
+    margin-left: 100px;
+}
+
+.karzarar-small-page{
+    width: 95%;
+    height: auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.karzarar-small-page:hover{
+    background-color: black;
+}
+
+.zarar{
+    color: red;
+    margin-left: 100px;
+}
+
+.tarih{
+    margin-left: 120px;
+}
+
+.dashboard-small-page:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.adlar{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.icon{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.yatirim{
+    font-weight: bolder;
+}
+
+body {
+    background-color: #15202B;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.main-container {
+    margin-left: 250px;
+}
+
+#grafik1{
+    width: 100%;
+    height: auto;
+}
+
