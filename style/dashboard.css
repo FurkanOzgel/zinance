@@ -38,7 +38,18 @@
     margin-left: 370px;
     margin-top: 530px;
     border-radius: 40px;
-    width: 55%;
+    width: 30%;
+    height: 120px;
+}
+
+#dashboard-page-yazarlar{
+    position: absolute;
+    background-color: #1E2732;
+    padding: 20px;
+    margin-left: 880px;
+    margin-top: 530px;
+    border-radius: 40px;
+    width: 22%;
     height: 120px;
 }
 
