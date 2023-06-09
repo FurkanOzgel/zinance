@@ -1,0 +1,25 @@
+.author-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #1E2732;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: 0px solid;
+    font-size: 15px;
+    font-weight: 600;
+    width: 90px;
+}

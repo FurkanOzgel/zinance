@@ -3,9 +3,9 @@ fetch('../data/blogs.json')
     .then((json) => {
         document.getElementsByClassName("main-container")[0].style.display = "flex"
         json.forEach((element, index) => {
-            let div = document.createElement("div");
-            div.innerHTML = `
-                <div style="">
+            let a= document.createElement("a");
+            a.innerHTML = `
+                <div>
                     <div class="blog-title">`+element.name+`</div>
                     <div class="blog-author"><img src="../images/profile.jpg" style="height:20px;width:20px;border-radius:100%; margin-right:5px;">`+element.author+`</div>
                     <div class="chart-container" id="chartContainer`+index+`"> </div>
@@ -15,9 +15,9 @@ fetch('../data/blogs.json')
                     </div>
                 </div>
             `;
-
-            div.className = "blog-container"
-            document.getElementsByClassName("blog-list")[0].appendChild(div)
+            a.href = element.url;
+            a.className = "blog-container"
+            document.getElementsByClassName("blog-list")[0].appendChild(a)
 
             let span = document.getElementsByClassName("percentage-span");
             span = document.getElementsByClassName("percentage-span")[span.length - 1];

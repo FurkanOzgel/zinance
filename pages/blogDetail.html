@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/theme.css">
+    <link rel="stylesheet" href="../style/blog_detail.css">
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.stock.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    
+<div id="mySidenav" class="sidenav">
+    <div id="profile-container">
+        <img id="profile-img" src="../images/profile.jpg">
+    </div>
+
+    <!-- Start Sidebar -->
+    <div id="link-container">
+        <a href="dashboard.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentcolor"><path d="M180 936q-24.75 0-42.375-17.625T120 876V276q0-24.75 17.625-42.375T180 216h600q24.75 0 42.375 17.625T840 276v600q0 24.75-17.625 42.375T780 936H180Zm230-60V606H180v270h230Zm60 0h310V606H470v270ZM180 546h600V276H180v270Z"/></svg>
+            &nbsp;Dashboard
+        </a>
+        <a href="markets.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill="currentcolor"><path d="M120 936v-76l60-60v136h-60Zm165 0V700l60-60v296h-60Zm165 0V640l60 61v235h-60Zm165 0V701l60-60v295h-60Zm165 0V540l60-60v456h-60ZM120 700v-85l280-278 160 160 280-281v85L560 582 400 422 120 700Z"/></svg>
+            &nbsp;Piyasalar
+        </a>
+
+        <a href="blogs.html"  class="active">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" fill= "currentColor"><path d="M277 777h275v-60H277v60Zm0-171h406v-60H277v60Zm0-171h406v-60H277v60Zm-97 501q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600V276H180v600Zm0-600v600-600Z"/></svg>
+            &nbsp;Bloglar
+        </a>
+        <a href="info.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="currentColor"><path d="M453-280h60v-240h-60v240Zm26.982-314q14.018 0 23.518-9.2T513-626q0-14.45-9.482-24.225-9.483-9.775-23.5-9.775-14.018 0-23.518 9.775T447-626q0 13.6 9.482 22.8 9.483 9.2 23.5 9.2Zm.284 514q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"/></svg>
+                &nbsp;Yardım
+            </a>
+
+    </div>
+    <!-- End Sidebar -->
+
+    <div id="brand">
+        <img id="logo" src="../images/logo_transparant.png">
+    </div>
+</div>
+
+    <div class="main-container" style="display: flex; flex-direction: row;">
+        <div style="width: 100%">
+            <div class="author-container">
+                <img src="https://images.squarespace-cdn.com/content/v1/592738c58419c2fe84fbdb81/1571829929929-XRB9VF9242RNUKBBX55E/DwayneBrownStudio_OttawaLinkedInHeadshots_ClaireBrown.jpg?format=1000w" id="profile-img" style="height: 100px; width: 100px; border-radius: 20px;">
+                <div class="author-info">
+                    Ayşe Biçe Çalışkan
+                    <button>+ Takip Et</button>
+                </div>
+
+            </div>
+            <div class="order-info-container">
+                <div class="order-info">
+                    <span>İcon</span>
+                    <span>5d 12%</span>
+                </div>
+                <div class="order-info">
+                    <span>12.06.2023</span>
+                    <span>14.2TL</span>
+                </div>
+                <div class="order-info">
+                    <span>12.06.2023</span>
+                    <span>14.2TL</span>
+                </div>
+            </div>
+            <div id="chart" style="height: 75vh; width: 100%; margin-top: 30px;"></div>
+            
+        </div>
+        <div style="width: 100%;">
+            <div id="blog-top">
+
+            </div>
+            <div id="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus voluptate neque cumque, aspernatur aperiam distinctio fuga sapiente? Modi, optio repellendus? Laboriosam modi iste ipsum assumenda saepe perspiciatis, architecto soluta maxime voluptate doloribus dicta voluptatum, veritatis tenetur voluptas. Aliquam, iusto? Tempora numquam eveniet quos? Eveniet voluptate tenetur repellat omnis, nihil odit ipsa ipsum ut velit iusto assumenda deserunt nostrum vitae pariatur sequi nisi laudantium placeat accusantium maiores esse dolorem! Quasi, at delectus. Asperiores molestiae dolores excepturi quam eveniet, perferendis incidunt magni numquam nemo rem, temporibus sit iste quisquam, error ullam aliquam alias nostrum nulla quod. Mollitia est ratione magni officia suscipit, modi minus perferendis numquam odio voluptatem ea deleniti tenetur, commodi vero! Nulla sed repellat dolores, perferendis earum voluptate architecto voluptatibus, provident id consectetur ea, ducimus nihil! Quo tempora consequuntur quos, repellendus molestiae obcaecati placeat. Magni impedit et dicta asperiores nesciunt aspernatur amet vitae explicabo odit dignissimos accusantium, accusamus odio perspiciatis natus porro cumque rem, omnis fugiat at saepe velit veniam earum similique. Dolorem amet rem nobis facere nostrum voluptatem at, ullam soluta, optio doloremque cupiditate dicta aliquam omnis ex praesentium, harum corporis labore. Perspiciatis consequuntur fugiat quisquam itaque in, eum quod temporibus assumenda minima harum quidem eos necessitatibus esse molestias? Asperiores beatae vero eveniet tempore similique porro, amet illum quidem soluta quia iure atque esse aliquid incidunt. Numquam, suscipit. Exercitationem accusamus, optio delectus ipsum cumque doloribus deleniti facere, rem minima qui alias tempore similique eum ipsam perferendis? Laboriosam asperiores omnis deserunt, ea minima sequi repellat autem sit necessitatibus natus.
+            </div>
+        
+        </div>
+    </div>
+    <script src="../js/blogDetail.js"></script>
+    
+</body>
+</html>
