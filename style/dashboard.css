@@ -1,10 +1,11 @@
-#dashboard-page-yatirim{
+#close-invests{
     float: left;
     width: 25%; 
     height: auto;
     background-color: #1E2732;
     border-radius: 40px;
     padding: 20px;
+    margin: 5px;
 }
 
 #dashboard-page-encok{
@@ -53,19 +54,34 @@
     height: 120px;
 }
 
-.dashboard-small-page{
+.close-invests-item {
     width: 95%;
     margin-top: 10px;
     border-radius: 40px;
     padding: 10px;
-    height: 30px;
+    height: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.kar{
-    color: green;
-    margin-left: 100px;
+.order-info {
+    margin-left: 50px;
+    width: calc(95% - 40px);
+    color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.increase{
+    color: #03A66D;
+    font-weight: bold;
+}
+
+.falling{
+    color: #CF304A;
+    font-weight: bold;
 }
 
 .karzarar-small-page{
@@ -82,25 +98,18 @@
     background-color: black;
 }
 
-.zarar{
-    color: red;
-    margin-left: 100px;
-}
 
-.tarih{
-    margin-left: 120px;
-}
 
-.dashboard-small-page:hover{
-    background-color: black;
-    color: white;
+.change {
+    margin-left: 00px;
 }
 
 
-
-.adlar{
-    margin-left: 10px;
+ 
+.symbol {
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .icon{
@@ -109,7 +118,7 @@
     height: 30px;
 }
 
-.yatirim{
+.close-invests-title{
     font-weight: bolder;
 }
 
