@@ -1,65 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#graph1 {
+    width: 100%;
+    height: 50%;
+}
+
+#graph2 {
+    width: 100%;
+    height: 50%;
+}
+
+
+.main-container {
+    display: flex;
+    height: 100%;
+}
+
 #close-invests{
-    float: left;
     width: 25%; 
-    height: auto;
+    height: calc(100% - 50px);
     background-color: #1E2732;
     border-radius: 40px;
     padding: 20px;
     margin: 5px;
 }
 
-#dashboard-page-encok{
-    margin-left: 10px;
-    float: left;
-    width: 45%;
-    height: 470px;
+#graph-container{
+    margin: 5px;
+    height: calc(100% - 50px);
+    width: calc(50% - 160px);
     padding: 20px;
     background-color: #1E2732;
     border-radius: 40px;
-}
-
-#dashboard-page-karzarar{
-    float: left;
-    width: 18%; 
-    height: 470px;
-    background-color: #1E2732;
-    border-radius: 40px;
-    padding: 20px;   
-    margin-left: 10px;
-}
-
-.temizle{
-    clear: both;
-}
-
-#dashboard-page-blog{
-    position: absolute;
-    background-color: #1E2732;
-    padding: 20px;
-    margin-left: 370px;
-    margin-top: 530px;
-    border-radius: 40px;
-    width: 30%;
-    height: 120px;
-}
-
-#dashboard-page-yazarlar{
-    position: absolute;
-    background-color: #1E2732;
-    padding: 20px;
-    margin-left: 880px;
-    margin-top: 530px;
-    border-radius: 40px;
-    width: 22%;
-    height: 120px;
 }
 
 .close-invests-item {
     width: 95%;
     margin-top: 10px;
     border-radius: 40px;
-    padding: 10px;
     height: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,27 +68,10 @@
     font-weight: bold;
 }
 
-.karzarar-small-page{
-    width: 95%;
-    height: auto;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-top: 8px;
-}
-
-.karzarar-small-page:hover{
-    background-color: black;
-}
-
-
 
 .change {
     margin-left: 00px;
 }
-
-
  
 .symbol {
     font-weight: bold;
@@ -113,12 +80,11 @@
 }
 
 .icon{
-    float: left;
     width: 30px;
     height: 30px;
 }
 
-.close-invests-title{
+.close-invests-title {
     font-weight: bolder;
 }
 
@@ -128,12 +94,4 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
 }
 
-.main-container {
-    margin-left: 250px;
-}
-
-#grafik1{
-    width: 100%;
-    height: auto;
-}
 
