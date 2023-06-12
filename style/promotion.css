@@ -1,4 +1,8 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
 
 nav {
     height: 100px;
@@ -22,9 +26,15 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    background-color: #1E2732;
+    background-color: #1e2fff;
     width: 200px;
     height: 50px;
+    z-index: 2;
+
+}
+
+#log_in:hover {
+    background-color: black;
 }
 
 
@@ -51,7 +61,8 @@ nav {
 }
 
 #images-container {
-    margin-top: -50px
+    margin-top: -50px;
+    z-index: 1;
 }
 
 #sing_up {
@@ -63,7 +74,12 @@ nav {
     height: 60px;
     width: 275px;
     border-radius: 20px;
-    background-color: #1E2732;
+    background-color: #1E2FFF;;
+    margin-top: 40px;
+}
+
+#sing_up:hover {
+    background-color: black;
 }
 
 p {
