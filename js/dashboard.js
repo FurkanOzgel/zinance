@@ -7,8 +7,8 @@ new Chart(budget, {
     data: {
         labels: ["TRX", "ALPINE", "EOS", "AVAX"],
         datasets: [{
-            label: ' Value in Budget',
-            data: [12, 19, 3, 5],
+            label: 'Value in Budget',
+            data: [2647.99, 2800, 2348.24, 3364.48],
             borderWidth: 0
         }]
     },

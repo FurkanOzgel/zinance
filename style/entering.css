@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#form_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 75px;
+}
+
+input {
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: 350px;
+    height: 30px;
+}
+
+textarea {
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: 350px;
+    height: 90px;
+}
+
+#submit_btn {
+    background-color: #1e2fff;
+    color: white;
+    border: 0px ;
+    font-size: 22px;
+    font-weight: bold;
+    height: 40px ;
+    width: 140px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+#submit_btn:hover {
+    background-color: black;
+}
+
+#forgot_btn {
+    background-color: #15202B;
+    border: 0px;
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#error-text {
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
