@@ -5,7 +5,9 @@ html, body {
 }
 
 .top-container {
+    border-radius: 20px;
     display: flex;
+    align-items: center;
     height: 20%;
     background-color: #1E2732;
     width: calc(100% - 25px);
@@ -14,11 +16,13 @@ html, body {
 }
 
 .author-container {
-    
+    margin: 10px;
     display: flex;
+    align-items: center;
 }
 
 #blog-container {
+    border-radius: 20px;
     width: calc(100% - 25px);
     height: calc(100% - 30px);
     background-color:#1E2732;
@@ -27,18 +31,43 @@ html, body {
 }
 
 #blog-content {
+    padding: 20px;
+    padding-top: 0px;
+    color: rgb(182, 178, 178);
+    font-weight: 500;
+    font-size: 16px;
+}
 
+p {
+    text-indent: 2em;
+}
+
+#blog-top {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+hr {
+    position: relative;
+    background: white;
+    height: 75px;
+    width: 0.5 px;
+    margin-right: 15px;
+    margin-left: 10px;
 }
 
 .comment-container {
+    border-radius: 20px;
     height: calc(58% - 60px);
     background-color: #1E2732;
     width: calc(100% - 25px);
     margin: 15px;
-    margin-left: 10px;
 }
 
 .order-info-container {
+    align-items: center;
+    border-radius: 20px;
     width: calc(100% - 25px);
     height: 22%;
     margin: 15px;
@@ -50,22 +79,40 @@ html, body {
 
 }
 
+#profile {
+    height: 22%;/* Adjust the percentage as needed */
+    width: 22%;
+    border-radius: 20px;
+}
+
 .author-info {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    font-size: 20px;
+    padding-right: 0px;
+    font-size: 18px;
     font-weight: 600;
+}
+
+.author-detail {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
     margin-top: 10px;
-    background-color: black;
+    background-color: #1E2FFF;
     color: white;
     border: 0px solid;
     font-size: 15px;
-    font-weight: 600;
-    width: 90px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
 }
 
 #symbol {
@@ -78,14 +125,13 @@ button {
     margin-bottom: 10px;
     border-radius: 40px;
     height: 20px;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .order-info {
-    margin-left: 50px;
+    margin-left: 40px;
     width: calc(95% - 40px);
     color:gray;
     display: flex;
@@ -95,6 +141,12 @@ button {
 
 .increase{
     color: #03A66D;
+    font-weight: bold;
+}
+
+
+.falling {
+    color: #CF304A;
     font-weight: bold;
 }
 
@@ -111,4 +163,38 @@ button {
 
 .close-invests-title {
     font-weight: bolder;
+}
+
+.leave-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.comment-input {
+    width: 100%;
+    resize: none; 
+    overflow: hidden;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    background-color: #1E2732;
+    caret-color: white; 
+    color: white;
+}
+
+.comment-btn {
+    margin: 10px;
+    margin-top: -5px; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment {
+    display: flex;
 }
