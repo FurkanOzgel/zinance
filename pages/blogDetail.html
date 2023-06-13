@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/theme.css">
     <link rel="stylesheet" href="../style/blog_detail.css">
+
+
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.stock.min.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
@@ -46,41 +48,50 @@
     </div>
 </div>
 
-    <div class="main-container" style="display: flex; flex-direction: row;">
-        <div style="width: 100%">
-            <div class="author-container">
-                <img src="https://images.squarespace-cdn.com/content/v1/592738c58419c2fe84fbdb81/1571829929929-XRB9VF9242RNUKBBX55E/DwayneBrownStudio_OttawaLinkedInHeadshots_ClaireBrown.jpg?format=1000w" id="profile-img" style="height: 100px; width: 100px; border-radius: 20px;">
-                <div class="author-info">
-                    Ayşe Biçe Çalışkan
-                    <button>+ Takip Et</button>
-                </div>
-
-            </div>
-            <div class="order-info-container">
-                <div class="order-info">
-                    <span>İcon</span>
-                    <span>5d 12%</span>
-                </div>
-                <div class="order-info">
-                    <span>12.06.2023</span>
-                    <span>14.2TL</span>
-                </div>
-                <div class="order-info">
-                    <span>12.06.2023</span>
-                    <span>14.2TL</span>
-                </div>
-            </div>
-            <div id="chart" style="height: 75vh; width: 100%; margin-top: 30px;"></div>
-            
-        </div>
-        <div style="width: 100%;">
+    <div class="main-container" style="display: flex; flex-direction: row; height: 100%;">
+        <div id="blog-container">
             <div id="blog-top">
 
             </div>
             <div id="blog-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minus voluptate neque cumque, aspernatur aperiam distinctio fuga sapiente? Modi, optio repellendus? Laboriosam modi iste ipsum assumenda saepe perspiciatis, architecto soluta maxime voluptate doloribus dicta voluptatum, veritatis tenetur voluptas. Aliquam, iusto? Tempora numquam eveniet quos? Eveniet voluptate tenetur repellat omnis, nihil odit ipsa ipsum ut velit iusto assumenda deserunt nostrum vitae pariatur sequi nisi laudantium placeat accusantium maiores esse dolorem! Quasi, at delectus. Asperiores molestiae dolores excepturi quam eveniet, perferendis incidunt magni numquam nemo rem, temporibus sit iste quisquam, error ullam aliquam alias nostrum nulla quod. Mollitia est ratione magni officia suscipit, modi minus perferendis numquam odio voluptatem ea deleniti tenetur, commodi vero! Nulla sed repellat dolores, perferendis earum voluptate architecto voluptatibus, provident id consectetur ea, ducimus nihil! Quo tempora consequuntur quos, repellendus molestiae obcaecati placeat. Magni impedit et dicta asperiores nesciunt aspernatur amet vitae explicabo odit dignissimos accusantium, accusamus odio perspiciatis natus porro cumque rem, omnis fugiat at saepe velit veniam earum similique. Dolorem amet rem nobis facere nostrum voluptatem at, ullam soluta, optio doloremque cupiditate dicta aliquam omnis ex praesentium, harum corporis labore. Perspiciatis consequuntur fugiat quisquam itaque in, eum quod temporibus assumenda minima harum quidem eos necessitatibus esse molestias? Asperiores beatae vero eveniet tempore similique porro, amet illum quidem soluta quia iure atque esse aliquid incidunt. Numquam, suscipit. Exercitationem accusamus, optio delectus ipsum cumque doloribus deleniti facere, rem minima qui alias tempore similique eum ipsam perferendis? Laboriosam asperiores omnis deserunt, ea minima sequi repellat autem sit necessitatibus natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vo
             </div>
         
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <div class="top-container">
+                <div class="author-container">
+                    <img src="https://images.squarespace-cdn.com/content/v1/592738c58419c2fe84fbdb81/1571829929929-XRB9VF9242RNUKBBX55E/DwayneBrownStudio_OttawaLinkedInHeadshots_ClaireBrown.jpg?format=1000w" id="profile-img" style="height: 100px; width: 100px; border-radius: 20px;">
+                    <div class="author-info">
+                        Ayşe Biçe Çalışkan
+                        <button>+ Takip Et</button>
+                    </div>
+                    <hr>
+                    <div>
+                        Toplam Bütçe: 27.000
+                    </div>
+                </div>
+            </div>
+            <div class="order-info-container">
+                <div style="width: calc(100% - 20px);">
+                    <div class="close-invests-item">
+                        <div class="symbol">
+                            <img src="../images/crypto_icons/btc.png" class="icon">
+                            <div style="margin-left: 10px;">BTC</div>
+                        </div>
+                        <div class="change increase">+174,99₺ (+7%)</div>
+                    </div>
+                    <div>
+                        <div class="order-info">Piyasa Değeri <span>2674,99₺</span></div>
+                        <div class="order-info">10.06.22 <span>567.942₺</span></div>
+                        <div class="order-info">22.06.22 <span>607.697₺</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-container">
+                Yorumlar
+            </div>
+            <script src="../js/newsRenderer.js"></script>
         </div>
     </div>
     <script src="../js/blogDetail.js"></script>
