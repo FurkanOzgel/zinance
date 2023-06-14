@@ -5,14 +5,24 @@ Chart.defaults.color = 'white';
 new Chart(budget, {
     type: 'doughnut',
     data: {
-        labels: ["TRX", "ALPINE", "EOS", "AVAX"],
-        datasets: [{
-            label: 'Value in Budget',
-            data: [2647.99, 2800, 2348.24, 3364.48],
-            borderWidth: 0
-        }]
+      labels: ["TRX", "ALPINE", "EOS", "AVAX"],
+      datasets: [{
+        label: 'Value in Budget',
+        data: [2647.99, 2800, 2348.24, 3364.48],
+        borderWidth: 0
+      }]
     },
     options: {
+        plugins:{
+          title: {
+            display: true,
+            text: 'Bütçe Dağılımı',
+            font: {
+              size: 18,
+              weight:"bold"
+          }
+        },
+        },
         scales: {
             x: {
               ticks: {
