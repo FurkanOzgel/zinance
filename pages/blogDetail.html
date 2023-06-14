@@ -54,58 +54,47 @@
 
             </div>
             <div id="blog-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloremque placeat incidunt neque enim, eius in vitae temporibus inventore ducimus saepe excepturi earum dolorum distinctio, autem, culpa voluptate sit eaque.
-                    Ipsum nihil nemo modi placeat possimus. Praesentium corporis incidunt a aliquid quod iste pariatur dicta quibusdam ea, nostrum alias soluta itaque maiores sed sequi suscipit maxime nesciunt fugit odio reiciendis?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reiciendis dignissimos, harum odio pariatur earum ut quam iusto minus unde dolorem. Perferendis obcaecati corporis nisi culpa sapiente mollitia. Vero, nihil.
-                    Sunt, atque. Delectus corrupti est quod, ex ipsam facere labore tempora. Beatae corporis aspernatur est, qui quae nesciunt veritatis quos vel consequatur minima! Quibusdam reiciendis nihil sed voluptas inventore in.
-                    Aperiam architecto aspernatur natus pariatur inventore, at nulla voluptatum sapiente optio omnis expedita, nemo quos sit quam obcaecati recusandae eum dolore dolorem sunt repudiandae consectetur tempore. Nam impedit architecto maxime?
-                    Aut omnis nostrum dolorum impedit eveniet unde error recusandae nobis, illo, dicta quas consectetur temporibus voluptatibus laboriosam nam dolorem illum repellat voluptatum a repudiandae beatae cum sunt! In, pariatur magni.
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque maxime aliquid quam quisquam. Ex placeat, tempora, sed dolore at sunt sapiente, consequatur corporis doloribus natus perferendis nulla repudiandae rerum vel.
-                </p>
+                
             </div>
         
         </div>
         <div style="width: 100%; height: 100%;">
             <div class="top-container">
                 <div class="author-container">
-                    <img src="https://images.squarespace-cdn.com/content/v1/592738c58419c2fe84fbdb81/1571829929929-XRB9VF9242RNUKBBX55E/DwayneBrownStudio_OttawaLinkedInHeadshots_ClaireBrown.jpg?format=1000w" id="profile">
+                    <img id="profile">
                     <div class="author-info">
-                        Ayşe Biçe Çalışkan
+                        <span id="author_name"></span>
                         <button>+ Takip Et</button>
                     </div>
                     <hr>
                     <div style="font-size: 15px">
-                        <div class="author-detail">Toplam Bütçe: <span class="increase">27.000₺</span></div>
-                        <div class="author-detail">Yıllık Değişim: <span class="increase">+170%</span></div>
-                        <div class="author-detail"> Aylık Değişim: <span class="increase">+24%</span></div>
-                        <div class="author-detail">Haftalık Değişim: &nbsp;<span class="falling">-0.03%</span></div>
+                        <div class="author-detail">Toplam Bütçe: <span id="total_budget">27.000₺</span></div>
+                        <div class="author-detail">Yıllık Değişim: <span id="annual_change">+170%</span></div>
+                        <div class="author-detail"> Aylık Değişim: <span id="monthly_change">+24%</span></div>
+                        <div class="author-detail">Haftalık Değişim: &nbsp;<span id="weekly_change">-0.03%</span></div>
                     </div>
                 </div>
             </div>
+
             <div class="order-info-container">
                 <div style="width: calc(100% - 20px); margin: 20px; margin-top: 15px;">
                     <div class="close-invests-item">
                         <div class="symbol">
                             <img src="../images/crypto_icons/btc.png" class="icon">
-                            <div style="margin-left: 10px;">BTC</div>
+                            <div id="icon" style="margin-left: 10px;"></div>
                         </div>
-                        <div class="change increase">+174,99₺ (+7%)</div>
+                        <div id="order_change" class="change"></div>
                     </div>
                     <div>
-                        <div class="order-info">Piyasa Değeri <span>2674,99₺</span></div>
-                        <div class="order-info">10.06.22 <span>567.942₺</span></div>
-                        <div class="order-info">22.06.22 <span>607.697₺</span></div>
+                        <div class="order-info">Piyasa Değeri <span id="market_value"></span></div>
+                        <div class="order-info">10.06.22 <span id="start_price"></span></div>
+                        <div class="order-info">22.06.22 <span id="end_price"></span></div>
                     </div>
                 </div>
             </div>
 
             <div class="comment-container">
-                <div style="padding: 20px;">
+                <div id="comment_container" style="padding: 20px;">
                     <span style="font-weight: bold; font-size: 20px;">Yorumlar</span>
                     <div class="leave-comment">
                         <div style="display: flex;align-items: center; width: 100%;">
@@ -130,21 +119,6 @@
                             <button class="comment-btn" >İptal</button>
                             <button class="comment-btn">Yorum Yap</button>
                         </div>
-                    </div>
-                    <div class="comment">
-                        <img src="https://cdn1.img.sputniknews.com.tr/img/07e6/0b/0a/1063278198_194:0:1007:813_1920x0_80_0_0_cfca3fc81acd22d3184d6b24540fd749.jpg" style=" margin:10px; border-radius: 100%; width: 40px; height: 40px">
-                        <div style="display: flex; justify-content: center; font-size: 14px; flex-direction: column">
-                            <span style="font-weight: bold;">Nureddin Nebati</span>
-                            <span style="color:whitesmoke">Harika içerik teşekkürler.</span>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <img src="https://media.licdn.com/dms/image/C4D03AQG9TL7BwqiXaQ/profile-displayphoto-shrink_800_800/0/1658743894418?e=2147483647&v=beta&t=nQz6hD9ncCJ-knGbr15i1gii6Pfe9qFglQ4Cd9enBD4" style=" margin:10px; border-radius: 100%; width: 40px; height: 40px">
-                        <div style="display: flex; justify-content: center; font-size: 14px; flex-direction: column">
-                            <span style="font-weight: bold;">Mehmet Yıldırım</span>
-                            <span style="color:whitesmoke">Kavramlarda daha fazla sadeleştirmeye gidilmeli.</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>

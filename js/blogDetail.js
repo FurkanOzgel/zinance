@@ -8,63 +8,67 @@ fetch('../../data/blogDetails.json')
     .then((response) => response.json())
     .then((json) => {
         document.title = json[id].blog_title + " | Zinance";
-        // document.getElementById("blog-content").innerHTML = json[id].blog_innterHTML;
+        document.getElementById("blog-content").innerHTML = json[id].blog_innterHTML;
         document.getElementById("blog-top").innerHTML = json[id].blog_title;
-        
+        document.getElementById("profile").src = json[id].author.profile_img;
+        document.getElementById("author_name").innerHTML = json[id].author.name;
+
+        document.getElementById("total_budget").innerHTML = json[id].author.total_budget+"₺";
+        if(json[id].author.total_budget > 10000) {
+            document.getElementById("total_budget").className = "increase";
+        }else{
+            document.getElementById("total_budget").className = "falling";
+        }
+
+        document.getElementById("annual_change").innerHTML = json[id].author.annual_change+"%";
+        if(json[id].author.annual_change > 0) {
+            document.getElementById("annual_change").className = "increase";
+        }else{
+            document.getElementById("annual_change").className = "falling";
+        }
+
+        document.getElementById("monthly_change").innerHTML = json[id].author.monthly_change+"%";
+        if(json[id].author.monthly_change > 0) {
+            document.getElementById("monthly_change").className = "increase";
+        }else{
+            document.getElementById("monthly_change").className = "falling";
+        }
+
+        document.getElementById("weekly_change").innerHTML = json[id].author.weekly_change+"%";
+        if(json[id].author.weekly_change > 0) {
+            document.getElementById("weekly_change").className = "increase";
+        }else{
+            document.getElementById("weekly_change").className = "falling";
+        }
+
+        document.getElementById("icon").innerHTML = json[id].order_info.symbol;
+
+        const budget_change = json[id].order_info.end_price - json[id].order_info.start_price
+        document.getElementById("order_change").innerHTML = budget_change.toFixed(2)+"₺ ("+(budget_change*100/json[id].order_info.start_price).toFixed(2)+"%)";
+        if(budget_change > 0) {
+            document.getElementById("order_change").className = "increase";
+        }else{
+            document.getElementById("order_change").className = "falling";
+        }
+
+        document.getElementById("market_value").innerHTML = json[id].order_info.market_value+"₺";
+
+        document.getElementById("start_price").innerHTML = json[id].order_info.start_price+"₺";
+        document.getElementById("end_price").innerHTML = json[id].order_info.end_price+"₺";
+
+        const comment_container = document.getElementById("comment_container")
+        json[id].comments.forEach((item, index)=>{
+            const comment = document.createElement("div");
+            comment.className = "comment";
+            comment.innerHTML = `
+            <img src="`+item.profile_img+`" style=" margin:10px; border-radius: 100%; width: 40px; height: 40px">
+            <div style="display: flex; justify-content: center; font-size: 14px; flex-direction: column">
+                <span style="font-weight: bold;">`+item.name+`</span>
+                <span style="color:whitesmoke">`+item.comment_content+`</span>
+            </div>
+            `
+            comment_container.appendChild(comment)
+        })
+
+
     })
-
-
-fetch("../../data/blogDetails.json")
-    .then((response) => response.json())
-    .then((json) => {
-        let coin_data = json[id]
-
-        let data = coin_data.price_data
-        let chart_data = [];
-        let list;
-        
-
-        for(let i = 0; i < Object.keys(data.O).length; i ++){
-            let myDate = new Date(data.Close_Time[i]);
-            let year = myDate.getFullYear()
-            let month = myDate.getMonth()
-            let day = myDate.getDate()
-
-            let json_data = {x: new Date(year, month, day) ,y:[Number(data.O[i]), Number(data.h[i]), Number(data.l[i]), Number(data.C[i])]}
-            chart_data.push(json_data)
-        }
-
-
-        
-            var chart = new CanvasJS.Chart("chart",
-            {
-                backgroundColor: "#15202B",
-                zoomEnabled: true,
-                exportEnabled: false,
-                axisY: {
-                    labelFontColor: "white",
-                    includeZero:false,
-                    prefix: "₺ ",
-                },
-                axisX: {
-                    interval:8,
-                    intervalType: "day",
-                    valueFormatString: "DD-MMM",
-                    labelAngle: -45,
-                    labelFontColor: "white",
-                    
-                },
-                data: [
-                {
-                    type: "candlestick",
-                    risingColor: "#03A66D",
-                    fallingColor:"#CF304A",
-                    color:"white",
-                    dataPoints: chart_data
-                }
-                ]
-            });
-            chart.render();
-        }
-
-    );
