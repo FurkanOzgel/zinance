@@ -11,52 +11,52 @@ fetch('../../data/blogDetails.json')
         document.getElementById("blog-content").innerHTML = json[id].blog_innterHTML;
         document.getElementById("blog-top").innerHTML = json[id].blog_title;
         document.getElementById("profile").src = json[id].author.profile_img;
-        document.getElementById("author_name").innerHTML = json[id].author.name;
+        document.getElementById("author-name").innerHTML = json[id].author.name;
 
-        document.getElementById("total_budget").innerHTML = json[id].author.total_budget+"₺";
+        document.getElementById("total-budget").innerHTML = json[id].author.total_budget+"₺";
         if(json[id].author.total_budget > 10000) {
-            document.getElementById("total_budget").className = "increase";
+            document.getElementById("total-budget").className = "increase";
         }else{
-            document.getElementById("total_budget").className = "falling";
+            document.getElementById("total-budget").className = "falling";
         }
 
-        document.getElementById("annual_change").innerHTML = json[id].author.annual_change+"%";
+        document.getElementById("annual-change").innerHTML = json[id].author.annual_change+"%";
         if(json[id].author.annual_change > 0) {
-            document.getElementById("annual_change").className = "increase";
+            document.getElementById("annual-change").className = "increase";
         }else{
-            document.getElementById("annual_change").className = "falling";
+            document.getElementById("annual-change").className = "falling";
         }
 
-        document.getElementById("monthly_change").innerHTML = json[id].author.monthly_change+"%";
+        document.getElementById("monthly-change").innerHTML = json[id].author.monthly_change+"%";
         if(json[id].author.monthly_change > 0) {
-            document.getElementById("monthly_change").className = "increase";
+            document.getElementById("monthly-change").className = "increase";
         }else{
-            document.getElementById("monthly_change").className = "falling";
+            document.getElementById("monthly-change").className = "falling";
         }
 
-        document.getElementById("weekly_change").innerHTML = json[id].author.weekly_change+"%";
+        document.getElementById("weekly-change").innerHTML = json[id].author.weekly_change+"%";
         if(json[id].author.weekly_change > 0) {
-            document.getElementById("weekly_change").className = "increase";
+            document.getElementById("weekly-change").className = "increase";
         }else{
-            document.getElementById("weekly_change").className = "falling";
+            document.getElementById("weekly-change").className = "falling";
         }
 
         document.getElementById("icon").innerHTML = json[id].order_info.symbol;
 
         const budget_change = json[id].order_info.end_price - json[id].order_info.start_price
-        document.getElementById("order_change").innerHTML = budget_change.toFixed(2)+"₺ ("+(budget_change*100/json[id].order_info.start_price).toFixed(2)+"%)";
+        document.getElementById("order-change").innerHTML = budget_change.toFixed(2)+"₺ ("+(budget_change*100/json[id].order_info.start_price).toFixed(2)+"%)";
         if(budget_change > 0) {
-            document.getElementById("order_change").className = "increase";
+            document.getElementById("order-change").className = "increase";
         }else{
-            document.getElementById("order_change").className = "falling";
+            document.getElementById("order-change").className = "falling";
         }
 
-        document.getElementById("market_value").innerHTML = json[id].order_info.market_value+"₺";
+        document.getElementById("market-value").innerHTML = json[id].order_info.market_value+"₺";
 
-        document.getElementById("start_price").innerHTML = json[id].order_info.start_price+"₺";
-        document.getElementById("end_price").innerHTML = json[id].order_info.end_price+"₺";
+        document.getElementById("start-price").innerHTML = json[id].order_info.start_price+"₺";
+        document.getElementById("end-price").innerHTML = json[id].order_info.end_price+"₺";
 
-        const comment_container = document.getElementById("comment_container")
+        const comment_container = document.getElementById("comment-container")
         json[id].comments.forEach((item, index)=>{
             const comment = document.createElement("div");
             comment.className = "comment";

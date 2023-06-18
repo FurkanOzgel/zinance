@@ -4,7 +4,7 @@ html, body {
     padding: 0;
 }
 
-#form_container {
+#form-container {
     height: 100%;
     width: 100%;
     display: flex;
@@ -35,7 +35,7 @@ textarea {
     height: 90px;
 }
 
-#submit_btn {
+#submit-btn {
     background-color: #1e2fff;
     color: white;
     border: 0px ;
@@ -48,11 +48,11 @@ textarea {
 
 }
 
-#submit_btn:hover {
+#submit-btn:hover {
     background-color: black;
 }
 
-#forgot_btn {
+#forgot-btn {
     background-color: #15202B;
     border: 0px;
     color: white;

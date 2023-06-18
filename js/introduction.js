@@ -40,12 +40,12 @@ const app = Vue.createApp({
                     <span class="title-item">24sa Değişim</span>
                 </div>
                 <li v-for="coin in coin_list" class="coin">
-                    <span class="coin_span">
-                    <img :src="source(coin)" class="coin_icon">
+                    <span class="coin-span">
+                    <img :src="source(coin)" class="coin-icon">
                         &nbsp;&nbsp;&nbsp;{{coin.symbol.slice(0,-3)}}
                     </span>
-                    <span class="coin_span" style="font-weight:400; color:#D3D3D3;">₺{{coin.price}}</span>
-                    <span class="coin_span" :class="getCoinClass(coin)">{{coin.percentage}}%</span>
+                    <span class="coin-span" style="font-weight:400; color:#D3D3D3;">₺{{coin.price}}</span>
+                    <span class="coin-span" :class="get_coin_class(coin)">{{coin.percentage}}%</span>
                 </li>
             </ul>
             <div class="sub-message">
@@ -1123,23 +1123,23 @@ const app = Vue.createApp({
         }
     },
     mounted() {
-        this.loadCharts();
+        this.load_charts();
     },
     methods: {
         source(data) {
             return "../images/crypto_icons/"+data.symbol.slice(0,-3).toLowerCase()+".png" 
         },
-        isIncrease(data) {
+        is_increase(data) {
             if(data.percentage > 0) {
                 return true
             }else{
                 return false
             }
         },
-        getCoinClass(coin) {
-            return this.isIncrease(coin) ? 'increase' : 'fall';
+        get_coin_class(coin) {
+            return this.is_increase(coin) ? 'increase' : 'fall';
         },
-        loadCharts() {
+        load_charts() {
 
             this.blog_list.forEach((item, index) => {
 
