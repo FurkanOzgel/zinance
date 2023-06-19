@@ -1,0 +1,72 @@
+{
+    "name":"Furkan",
+    "surname":"Özgel",
+    "age":"16",
+    "profile_img":"",
+    "budget": [
+        {"symbol":"TRX", "amount":"5"},
+        {"symbol":"ALPINE", "amount":"5"},
+        {"symbol":"EOS", "amount":"5"},
+        {"symbol":"AVAX", "amount":"5"}
+    ],
+    "closed_orders": [
+        {
+            "symbol":"BTC",
+            "amount":"0.0043557",
+            "buy_date":"10.06.22",
+            "buy_price":"567942",
+            "sell_date":"22.06.22",
+            "sell_price":"607697"
+        },
+        {
+            "symbol":"LINK",
+            "amount":"20",
+            "buy_date":"10.06.22",
+            "buy_price":"124.56",
+            "sell_date":"19.06.22",
+            "sell_price":"139.50"
+        },
+        {
+            "symbol":"SXP",
+            "amount":"280",
+            "buy_date":"16.06.22",
+            "buy_price":"8.92",
+            "sell_date":"03.07.22",
+            "sell_price":"8.38"
+        },
+        {
+            "symbol":"DOGE",
+            "amount":"3058",
+            "buy_date":"18.06.22",
+            "buy_price":"1.02",
+            "sell_date":"26.06.22",
+            "sell_price":"1.10"
+        }
+    ],
+    "open_orders": [
+        {
+            "symbol":"TRX",
+            "amount":"1898",
+            "buy_date":"10.06.22",
+            "buy_price":"1.30"
+        },
+        {
+            "symbol":"ALPINE",
+            "amount":"23.68",
+            "buy_date":"10.06.22",
+            "buy_price":"38.72"
+        },
+        {
+            "symbol":"EOS",
+            "amount":"136",
+            "buy_date":"16.06.22",
+            "buy_price":"15.64"
+        },
+        {
+            "symbol":"AVAX",
+            "amount":"13",
+            "buy_date":"18.06.22",
+            "buy_price":"232"
+        }
+    ]
+}
