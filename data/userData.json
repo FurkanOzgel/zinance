@@ -3,12 +3,7 @@
     "surname":"Özgel",
     "age":"16",
     "profile_img":"",
-    "budget": [
-        {"symbol":"TRX", "amount":"5"},
-        {"symbol":"ALPINE", "amount":"5"},
-        {"symbol":"EOS", "amount":"5"},
-        {"symbol":"AVAX", "amount":"5"}
-    ],
+    "budget": "10674.14",
     "closed_orders": [
         {
             "symbol":"BTC",
@@ -48,13 +43,13 @@
             "symbol":"TRX",
             "amount":"1898",
             "buy_date":"10.06.22",
-            "buy_price":"1.30"
+            "buy_price":"1.43"
         },
         {
             "symbol":"ALPINE",
             "amount":"23.68",
             "buy_date":"10.06.22",
-            "buy_price":"38.72"
+            "buy_price":"54.20"
         },
         {
             "symbol":"EOS",
@@ -66,7 +61,9 @@
             "symbol":"AVAX",
             "amount":"13",
             "buy_date":"18.06.22",
-            "buy_price":"232"
+            "buy_price":"284"
         }
-    ]
+    ],
+    "budget_history": [10000, 6800, 5500, 8000, 7700, 9200, 12300],
+    "budget_date": ["January","February","March","April","May","June","July"]
 }

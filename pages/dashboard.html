@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../style/theme.css">
     <link rel="stylesheet" href="../style/dashboard.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
     <title>Dashboard | Zinance</title>
 </head>
 <body>
@@ -45,136 +49,10 @@
     </div>
 </div>
 
-<div class="main-container">
-   
-        <div id="close-invests">
-            <div class="close-invests-title">Kapalı İşlemler</div>
-            
-            <hr>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/btc.png" class="icon">
-                        <div style="margin-left: 10px;">BTC</div>
-                    </div>
-                    <div class="change increase">+174,99₺ (+7%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2674,99₺</span></div>
-                    <div class="order-info">10.06.22 <span>567.942₺</span></div>
-                    <div class="order-info">22.06.22 <span>607.697₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/link.png" class="icon">
-                        <div style="margin-left: 10px;">LINK</div>
-                    </div>
-                    <div class="change increase">+304.21₺ (+12%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2.800₺</span></div>
-                    <div class="order-info">10.06.22 <span>124,56₺</span></div>
-                    <div class="order-info">19.06.22 <span>139,50₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/sxp.png" class="icon">
-                        <div style="margin-left: 10px;">SXP</div>
-                    </div>
-                    <div class="change falling">-151,76₺ (-6%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2348,24₺</span></div>
-                    <div class="order-info">16.06.22 <span>8,92₺</span></div>
-                    <div class="order-info">03.07.22 <span>8,38₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px;">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/doge.png" class="icon">
-                        <div style="margin-left: 10px;">DOGE</div>
-                    </div>
-                    <div class="change increase">+364.24₺ (+6.24%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>3364.48₺</span></div>
-                    <div class="order-info">18.06.22 <span>1,024₺</span></div>
-                    <div class="order-info">26.06.22 <span>1,105₺</span></div>
-                </div>
-            </div>
-        </div>
+<div class="main-container"></div>
 
-        <div id="graph-container">
-            <canvas id="graph1"></canvas>
-            <canvas id="graph2"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        </div>
-        
-        <div id="close-invests">
-            <div class="close-invests-title">Açık İşlemler</div>
-            
-            <hr>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/trx.png" class="icon">
-                        <div style="margin-left: 10px;">TRX</div>
-                    </div>
-                    <div class="change increase">+174,99₺ (+7%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2674,99₺</span></div>
-                    <div class="order-info">10.06.22 <span>567.942₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/alpine.png" class="icon">
-                        <div style="margin-left: 10px;">ALPINE</div>
-                    </div>
-                    <div class="change increase">+304.21₺ (+12%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2.800₺</span></div>
-                    <div class="order-info">10.06.22 <span>124,56₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px; border-bottom: 1px solid gray">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/eos.png" class="icon">
-                        <div style="margin-left: 10px;">EOS</div>
-                    </div>
-                    <div class="change falling">-151,76₺ (-6%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>2348,24₺</span></div>
-                    <div class="order-info">16.06.22 <span>8,92₺</span></div>
-                </div>
-            </div>
-            <div style="padding-bottom:20px;">
-                <div class="close-invests-item">
-                    <div class="symbol">
-                        <img src="../images/crypto_icons/avax.png" class="icon">
-                        <div style="margin-left: 10px;">AVAX</div>
-                    </div>
-                    <div class="change increase">+364.24₺ (+6.24%)</div>
-                </div>
-                <div>
-                    <div class="order-info">Piyasa Değeri <span>3364.48₺</span></div>
-                    <div class="order-info">18.06.22 <span>1,024₺</span></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../js/dashboard.js"></script>
+
 </body>
 </html>
