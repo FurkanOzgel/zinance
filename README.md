@@ -20,40 +20,20 @@ Tabii ki, sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazsa olmazlar
 
 ## Ekran Görüntüleri
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 1</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/1.png?raw=true" alt="Uygulama Ekran Görüntüsü 1">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/1.png?raw=true" alt="Uygulama Ekran Görüntüsü 1">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 2</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/2.png?raw=true" alt="Uygulama Ekran Görüntüsü 2">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/2.png?raw=true" alt="Uygulama Ekran Görüntüsü 2">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 3</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/3.png?raw=true" alt="Uygulama Ekran Görüntüsü 3">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/3.png?raw=true" alt="Uygulama Ekran Görüntüsü 3">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 4</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/4.png?raw=true" alt="Uygulama Ekran Görüntüsü 4">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/4.png?raw=true" alt="Uygulama Ekran Görüntüsü 4">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 5</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/5.png?raw=true" alt="Uygulama Ekran Görüntüsü 5">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/5.png?raw=true" alt="Uygulama Ekran Görüntüsü 5">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 6</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/6.png?raw=true" alt="Uygulama Ekran Görüntüsü 6">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/6.png?raw=true" alt="Uygulama Ekran Görüntüsü 6">
 
-<details>
-  <summary>Uygulama Ekran Görüntüsü 7</summary>
-  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/7.png?raw=true" alt="Uygulama Ekran Görüntüsü 7">
-</details>
+<img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/7.png?raw=true" alt="Uygulama Ekran Görüntüsü 7">
+
 
 ## Kullanılan Teknolojiler
 
