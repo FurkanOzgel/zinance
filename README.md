@@ -37,9 +37,9 @@ Tabii ki, sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazsa olmazlar
 
 ## Kullanılan Teknolojiler
 
-**Front-End:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
+**İstemci:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
 
-**Back-End:** Django (yakında...)
+**Sunucu:** Django (yakında...), @mathieuc/tradingview
 
 ## Bilgisayarınızda Çalıştırın
 
