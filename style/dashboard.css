@@ -20,7 +20,7 @@ html, body {
     height: 100%;
 }
 
-#close-invests{
+.invests{
     width: 25%; 
     height: calc(100% - 50px);
     background-color: #1E2732;
@@ -38,7 +38,7 @@ html, body {
     border-radius: 40px;
 }
 
-.close-invests-item {
+.invests-item {
     width: 95%;
     margin-top: 10px;
     border-radius: 40px;
@@ -84,7 +84,7 @@ html, body {
     height: 30px;
 }
 
-.close-invests-title {
+.invests-title {
     font-weight: bolder;
 }
 

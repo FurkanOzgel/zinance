@@ -14,12 +14,12 @@ function filterByKeyName(dataList, keyName) {
 
 const app = Vue.createApp({
   template: `
-  <div id="close-invests">
-    <div class="close-invests-title">Kapalı İşlemler</div>
+  <div class="invests">
+    <div class="invests-title">Kapalı İşlemler</div>
     <hr>
     
     <div v-for="order in user_data.closed_orders" style="padding-bottom:20px; border-bottom: 1px solid gray">
-        <div class="close-invests-item">
+        <div class="invests-item">
             <div class="symbol">
                 <img :src="get_img_source(order.symbol)" class="icon">
                 <div style="margin-left: 10px;">{{order.symbol}}</div>
@@ -39,12 +39,12 @@ const app = Vue.createApp({
     <canvas id="graph2"></canvas>
   </div>
 
-  <div id="close-invests">
-    <div class="close-invests-title">Açık İşlemler</div>
+  <div class="invests">
+    <div class="invests-title">Açık İşlemler</div>
     
     <hr>
     <div v-for="order in user_data.open_orders" style="padding-bottom:20px; border-bottom: 1px solid gray">
-        <div class="close-invests-item">
+        <div class="invests-item">
             <div class="symbol">
                 <img :src="get_img_source(order.symbol)" class="icon">
                 <div style="margin-left: 10px;">{{order.symbol}}</div>
