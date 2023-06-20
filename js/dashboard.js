@@ -14,7 +14,7 @@ function filterByKeyName(dataList, keyName) {
 
 const app = Vue.createApp({
   template: `
-  <div class="invests">
+  <div class="invests scrollable-div">
     <div class="invests-title">Kapalı İşlemler</div>
     <hr>
     
@@ -34,12 +34,12 @@ const app = Vue.createApp({
     </div>
   </div>
 
-  <div id="graph-container">
+  <div id="graph-container" class="scrollable-div">
     <canvas id="graph1"></canvas>
     <canvas id="graph2"></canvas>
   </div>
 
-  <div class="invests">
+  <div class="invests scrollable-div">
     <div class="invests-title">Açık İşlemler</div>
     
     <hr>
@@ -183,6 +183,8 @@ const app = Vue.createApp({
           }]
         },
         options: {
+          maintainAspectRatio: true, // Boyutun korunması
+            responsive: true,
             plugins:{
               title: {
                 display: true,
