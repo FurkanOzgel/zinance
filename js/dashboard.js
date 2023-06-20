@@ -34,7 +34,7 @@ const app = Vue.createApp({
     </div>
   </div>
 
-  <div id="graph-container" class="scrollable-div">
+  <div id="graph-container">
     <canvas id="graph1"></canvas>
     <canvas id="graph2"></canvas>
   </div>
@@ -247,6 +247,26 @@ const app = Vue.createApp({
               }
         }
     });
+
+    const chart_div = document.getElementById("graph-container")
+
+
+    var resizeObserver = new ResizeObserver(function(entries) {
+      // Her boyut değişikliğinde tetiklenecek işlev
+      entries.forEach(function(entry) {
+        console.log("çalıştı")
+        const client_height = chart_div.clientHeight
+        const scroll_height = chart_div.scrollHeight
+  
+        if((scroll_height - client_height) > 10){
+          chart_div.className = "scrollable-div"
+        }else{
+          chart_div.className = "hidden-scrollable"
+        }
+      });
+    });
+
+    resizeObserver.observe(chart_div);
   }
 
 })

@@ -5,8 +5,7 @@ html, body {
 }
 
 #graph1 {
-    height: 100px;
-    width: 140px;
+
 }
 
 #graph2 {
@@ -112,4 +111,9 @@ body {
 .scrollable-div {
     overflow-x: hidden;
     overflow-y: auto; /* Dikey scroll aktif */
+}
+
+.hidden-scrollable {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
