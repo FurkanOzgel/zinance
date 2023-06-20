@@ -1,9 +1,14 @@
-
 ![Logo](https://github.com/FurkanOzgel/zinance/blob/main/images/zinance_logo.jpeg?raw=true)
 
 
-    
-# Zinance
+## İçindekiler
+
+- [Zinance](#zinance)
+- [Ekran Görüntüleri](#ekran-görüntüleri)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Bilgisayarınızda Çalıştırın](#bilgisayarınızda-çalıştırın)
+
+## Zinance
 
 Zinance olarak, yatırım konusunda deneyimi olmayan insanlar için eğitici içerikler sunarak bu sektörde oldukça fazla olan bilgi kirliliğini azaltmayı hedefliyoruz. 
 
@@ -11,29 +16,51 @@ Sitemizin temel yapısı, "Demo Yatırım" adını verdiğimiz bir sistem üzeri
 
 Uzman hesapların yaptığı işlemleri referan göstererek yazdığı bu bloglar sayesinde kullanıcılarımıza, doğrudan gerçek hayattan beslenen örneklere, denenmiş ve işe yaramış yatırım tekniklerini öğrenebilecekleri bir bilgi kaynağı yaratmış oluyoruz.
 
-Tabiki sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazssa olmazlardan biridir. Kullanıcılarımız bloglardan öğrendikleri şeyleri demo yatırım sistemi ile tecrübe edecek ve dashboard sayfasından gelişimlerini izleyecek.
+Tabii ki, sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazsa olmazlardan biridir. Kullanıcılarımız bloglardan öğrendikleri şeyleri demo yatırım sistemi ile tecrübe edecek ve dashboard sayfasından gelişimlerini izleyecek.
+
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/1.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 1</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/1.png?raw=true" alt="Uygulama Ekran Görüntüsü 1">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/2.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 2</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/2.png?raw=true" alt="Uygulama Ekran Görüntüsü 2">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/5.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 3</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/3.png?raw=true" alt="Uygulama Ekran Görüntüsü 3">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/3.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 4</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/4.png?raw=true" alt="Uygulama Ekran Görüntüsü 4">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/4.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 5</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/5.png?raw=true" alt="Uygulama Ekran Görüntüsü 5">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/7.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 6</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/6.png?raw=true" alt="Uygulama Ekran Görüntüsü 6">
+</details>
 
-![Uygulama Ekran Görüntüsü](https://github.com/FurkanOzgel/zinance/blob/main/screenshots/6.png?raw=true)
+<details>
+  <summary>Uygulama Ekran Görüntüsü 7</summary>
+  <img src="https://github.com/FurkanOzgel/zinance/blob/main/screenshots/7.png?raw=true" alt="Uygulama Ekran Görüntüsü 7">
+</details>
+
 ## Kullanılan Teknolojiler
 
 **Front-End:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
 
-**Back-End:** Django ( yakında... )
+**Back-End:** Django (yakında...)
 
-  
 ## Bilgisayarınızda Çalıştırın
 
 Projeyi klonlayın
@@ -60,4 +87,3 @@ Sunucuyu çalıştırın
   npm run start
 ```
 
-  
