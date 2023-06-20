@@ -209,8 +209,8 @@ button:hover {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Scroll bar dolgu rengi */
-    border-radius: 4px; /* Scroll bar köşe yarıçapı */
+    background-color: gray; /* Scroll bar dolgu rengi */
+    border-radius: 0px; /* Scroll bar köşe yarıçapı */
   }
 
   ::-webkit-scrollbar-thumb:hover {
