@@ -39,7 +39,7 @@ Tabii ki, sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazsa olmazlar
 
 **İstemci:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
 
-**Sunucu:** Django (yakında...), @mathieuc/tradingview
+**Sunucu:** Django (yakında...)
 
 ## Bilgisayarınızda Çalıştırın
 
