@@ -1,67 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style/theme.css">
-    <link rel="stylesheet" href="style/introduction.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.stock.min.js"></script>
-
     <title>Zinance</title>
-</head>
-<body>
-
-    <nav>
-        <div id="brand">
-            <img id="logo" src="images/zinance_logo.jpeg">
-        </div>
-
-        <a id="log-in" href="pages/logIn.html">
-            Giriş Yap &nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="32" fill="currentcolor"><path d="M489-120v-60h291v-600H489v-60h291q24 0 42 18t18 42v600q0 24-18 42t-42 18H489Zm-78-185-43-43 102-102H120v-60h348L366-612l43-43 176 176-174 174Z"/></svg>
-        </a>
-    </nav>
-
-    <div id="main-container">
-        <div id="introduction-text">
-            <h1>
-                wanna advice?<br>
-                here you are the zinance!
-            </h1>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp; Zinance kullanıcılarının gerçek piyasalarda yatırım yapıyormuş gibi piyasalarda yatırım araçları için alış-satış emirleri vermesine olanak sağlayan bir sitedir. Uzmanlar yaptıkları her işlem çifti için blog yazabilir ve bu sayede kullanıcılarımız doğrudan gerçek hayat beslenen kaynaklara erişerek doğru bilgiye ulaşmış olur.
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp; Siz de yatırım yapmaya meraklı ama bu konuda bilgisiz biriyseniz Zinance dünyasına katılın.
-            </p>
-            <a id="sing-up" href="pages/singUp.html">
-                Zinance Hesabı Aç
-            </a>
-        </div>
-        <div id="images-container">
-            <div class="column">
-                <img class="introduction-img" src="images/website_images/dashboard.png">
-                <img class="introduction-img" src="images/website_images/blogs.png">
-                <img class="introduction-img" src="images/website_images/markets.png">
-            </div>
-            <div class="column" style="display: flex; flex-direction: column; justify-content: center;">
-                <img class="introduction-img" src="images/website_images/market_details.png">
-                <img class="introduction-img" src="images/website_images/news.png">
-                
-            </div>
-
-            
-        </div>
-    </div>
-    <div id="applets">
-
-    </div>
-    <script src="js/introduction.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
