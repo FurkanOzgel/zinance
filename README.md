@@ -37,7 +37,7 @@ Tabii ki, sadece bilgiyi bilmek yetmez. Tecrübe de bu konudaki olmazsa olmazlar
 
 ## Kullanılan Teknolojiler
 
-Bu bir frontend projesi olduğu için sunucu tarafını temsil etmesi adına data klasörü altında json dosyaları bulunmaktadır ve veriler bu json dosyalarından çekilmektedir. En kısa süre içerisinde arkaplan geliştirme sürecine başlamak ve projeyi aktif hale getirmek üzere çalışıyoruz. 
+Bu bir front-end projesi olduğu için sunucu tarafını temsil etmesi adına data klasörü altında json dosyaları bulunmaktadır ve veriler bu json dosyalarından çekilmektedir. En kısa süre içerisinde arkaplan geliştirme sürecine başlamak ve projeyi aktif hale getirmek üzere çalışıyoruz. 
 
 **İstemci:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
 
