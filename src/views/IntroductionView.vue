@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <style src="../assets/style/introduction.css" scoped>
 </style>
 
@@ -10,11 +7,10 @@
     <div id="brand">
       <img id="logo" src="../assets/images/zinance_logo.jpeg">
     </div>
-
-    <a id="log-in" href="pages/logIn.html">
-      Giriş Yap &nbsp;
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="32" fill="currentcolor"><path d="M489-120v-60h291v-600H489v-60h291q24 0 42 18t18 42v600q0 24-18 42t-42 18H489Zm-78-185-43-43 102-102H120v-60h348L366-612l43-43 176 176-174 174Z"/></svg>
-    </a>
+    <router-link to="/login" id="log-in">
+        Giriş Yap &nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="32" fill="currentcolor"><path d="M489-120v-60h291v-600H489v-60h291q24 0 42 18t18 42v600q0 24-18 42t-42 18H489Zm-78-185-43-43 102-102H120v-60h348L366-612l43-43 176 176-174 174Z"/></svg>
+    </router-link>
   </nav>
 
   <div id="main-container">
