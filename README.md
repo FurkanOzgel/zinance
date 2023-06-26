@@ -41,7 +41,7 @@ Bu bir front-end projesi olduğu için sunucu tarafını temsil etmesi adına da
 
 **İstemci:** Vue.js (Geçiş devam ediyor), Chart.js, canvasJS
 
-**Sunucu:** Django (yakında...)
+**Sunucu:** Django 
 
 ## Bilgisayarınızda Çalıştırın
 
