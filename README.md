@@ -1,4 +1,4 @@
-![Logo](https://github.com/FurkanOzgel/zinance/blob/main/images/zinance_logo.jpeg?raw=true)
+![Logo](https://github.com/FurkanOzgel/zinance/blob/main/Frontend/images/zinance_logo.jpeg?raw=true)
 
 
 ## İçindekiler
