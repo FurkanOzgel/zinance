@@ -33,29 +33,26 @@ import user_list from "../assets/data/userList.json"
 
 <script>
 export default {
-    data() {
-        return{
-            incorrect_login: false
-        }
-    },
-    methods: {
-        check_mail_password() {
-            const email = this.$refs.mail.value;
-            const password = this.$refs.password.value;
+  data() {
+    return{
+      incorrect_login: false
+    }
+  },
+  methods: {
+    check_mail_password() {
+      const email = this.$refs.mail.value;
+      const password = this.$refs.password.value;
 
 
-            const isVerificated = user_list.some((user) => {
-                return user.email == email && user.password == password;
-            })
-            
-            if(isVerificated){
-                this.$router.push('/dashboard');
-            }else{
-                this.incorrect_login = true
-            }
-                
-                }
+      // POST REQUEST LOGIN
+      
+      if(isVerificated){
+        this.$router.push('/dashboard');
+      }else{
+        this.incorrect_login = true
+      }    
     }
-    }
+}
+}
 </script>
 

@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import IntroductionView from '../views/IntroductionView.vue'
 import LoginView from '../views/LoginView.vue'
+import SignupView from '../views/SignupView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +18,12 @@ const router = createRouter({
       name: 'login',
       component: LoginView,
       meta: { title: 'Giriş Yap | Zinance' } 
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: SignupView,
+      meta: { title: 'Kayıt Ol | Zinance' } 
     },
     // {
     //   path: '/about',

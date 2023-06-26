@@ -25,14 +25,6 @@ input {
     height: 30px;
 }
 
-textarea {
-    border: 0px solid;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-    width: 350px;
-    height: 90px;
-}
 
 #submit-btn {
     background-color: #1e2fff;

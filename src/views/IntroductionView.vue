@@ -25,9 +25,9 @@
       <p>
         &nbsp;&nbsp;&nbsp;&nbsp; Siz de yatırım yapmaya meraklı ama bu konuda bilgisiz biriyseniz Zinance dünyasına katılın.
       </p>
-      <a id="sing-up" href="pages/singUp.html">
+      <router-link id="sing-up" to="/signup">
         Zinance Hesabı Aç
-      </a>
+      </router-link>
     </div>
     <div id="images-container">
       <div class="column">
