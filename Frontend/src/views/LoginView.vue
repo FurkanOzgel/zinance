@@ -1,7 +1,5 @@
 <script setup>
-
-import user_list from "../assets/data/userList.json"
-
+import axios from 'axios'
 </script>
 
 <style src="../assets/style/authentication.css" scoped>
@@ -12,19 +10,16 @@ import user_list from "../assets/data/userList.json"
 <div id="form-container">
   <img id="logo" src="../assets/images/zinance_logo.jpeg">
   <div class="form-row">
-    <input autocomplete="off" placeholder="E-Mail" ref="mail" type="email">
+    <input autocomplete="off" placeholder="E-Mail" ref="email" type="email">
   </div>
   <div class="form-row">
     <input placeholder="Parola" name="password" ref="password" type="password">
   </div>
-  <div id="error-text" v-show="this.incorrect_login">
-    Hatalı e-posta veya şifre. Tekrak deneyin!
+  <div id="error-text" v-show="this.incorrect_login_data">
+    {{error_message}}
   </div>
   <div class="form-row">
     <button id="submit-btn" @click="check_mail_password">Giriş Yap</button>
-  </div>
-  <div class="form-row">
-    <button id="forgot-btn">Şifremi Unuttum</button>
   </div>
 </div>
 
@@ -35,22 +30,28 @@ import user_list from "../assets/data/userList.json"
 export default {
   data() {
     return{
-      incorrect_login: false
+      incorrect_login_data: false,
+      error_message: ''
     }
   },
   methods: {
     check_mail_password() {
-      const email = this.$refs.mail.value;
+      const email = this.$refs.email.value;
       const password = this.$refs.password.value;
 
+      const post_data = {
+        'email': email,
+        'password': password
+      }
 
-      // POST REQUEST LOGIN
-      
-      if(isVerificated){
-        this.$router.push('/dashboard');
-      }else{
-        this.incorrect_login = true
-      }    
+      axios.post('http://127.0.0.1:8000/api/auth/login', post_data)
+        .then(response => {
+          this.$cookies.set('jwt', response.data.jwt);
+        })
+        .catch(error => {
+          this.error_message = error.response.data.detail
+          this.incorrect_login_data = true
+        });
     }
 }
 }

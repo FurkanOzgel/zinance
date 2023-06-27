@@ -1,7 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IntroductionView from '../views/IntroductionView.vue'
-import LoginView from '../views/LoginView.vue'
-import SignupView from '../views/SignupView.vue'
 
 
 const router = createRouter({
@@ -10,29 +7,21 @@ const router = createRouter({
     {
       path: '/',
       name: 'introduction',
-      component: IntroductionView,
+      component: () => import('../views/IntroductionView.vue'),
       meta: { title: 'Zinance' } 
     },
     {
       path: '/login',
       name: 'login',
-      component: LoginView,
+      component: () => import('../views/LoginView.vue'),
       meta: { title: 'Giriş Yap | Zinance' } 
     },
     {
       path: '/signup',
       name: 'signup',
-      component: SignupView,
+      component: () => import('../views/SignupView.vue'),
       meta: { title: 'Kayıt Ol | Zinance' } 
-    },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue')
-    // }
+    }
   ]
 })
 

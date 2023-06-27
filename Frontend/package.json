@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@canvasjs/vue-charts": "^1.0.1",
+    "axios": "^1.4.0",
     "vue": "^3.3.4",
+    "vue-cookies": "^1.8.3",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
