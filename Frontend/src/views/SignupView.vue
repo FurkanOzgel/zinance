@@ -21,7 +21,13 @@ import router from '../router';
     <input placeholder="E-Mail" ref="email" type="email">
   </div>
   <div class="form-row">
-    <input placeholder="Parola"  ref ="password" type="password">
+    <div class="password-div">
+      <input :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
+      <div class="eye-icon" @mousedown="togglePasswordVisibility" @mouseup="togglePasswordVisibility">
+        <img src="../assets/images/visible.svg" draggable="false" v-show="!showPassword">
+        <img src="../assets/images/non_visible.svg" draggable="false" v-show="showPassword">
+      </div>
+    </div>
   </div>
   <div class="form-row">
     <input placeholder="Parola Tekrar" ref="re_password" type="password">
@@ -39,10 +45,15 @@ import router from '../router';
 export default {
   data() {
     return{
-      error_message: ''
+      error_message: '',
+      showPassword: false
     }
   },
   methods: {
+    togglePasswordVisibility() {
+      this.showPassword = !this.showPassword;
+    },
+
     signup() {
       const first_name = this.$refs.first_name.value
       const last_name = this.$refs.last_name.value

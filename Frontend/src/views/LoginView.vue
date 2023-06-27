@@ -13,7 +13,13 @@ import axios from 'axios'
     <input autocomplete="off" placeholder="E-Mail" ref="email" type="email">
   </div>
   <div class="form-row">
-    <input placeholder="Parola" name="password" ref="password" type="password">
+    <div class="password-div">
+      <input :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
+      <div class="eye-icon" @mousedown="togglePasswordVisibility" @mouseup="togglePasswordVisibility">
+        <img src="../assets/images/visible.svg" draggable="false" v-show="!showPassword">
+        <img src="../assets/images/non_visible.svg" draggable="false" v-show="showPassword">
+      </div>
+    </div>
   </div>
   <div id="error-text" v-show="this.incorrect_login_data">
     {{error_message}}
@@ -31,7 +37,8 @@ export default {
   data() {
     return{
       incorrect_login_data: false,
-      error_message: ''
+      error_message: '',
+      showPassword: false
     }
   },
   methods: {
@@ -46,12 +53,16 @@ export default {
 
       axios.post('http://127.0.0.1:8000/api/auth/login', post_data)
         .then(response => {
-          this.$cookies.set('jwt', response.data.jwt);
+          this.$cookies.set('jwt', response.data.jwt, '1y');
         })
         .catch(error => {
           this.error_message = error.response.data.detail
           this.incorrect_login_data = true
         });
+    },
+
+    togglePasswordVisibility() {
+      this.showPassword = !this.showPassword;
     }
 }
 }

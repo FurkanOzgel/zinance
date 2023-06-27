@@ -71,6 +71,7 @@
     background-color: black;
     border-radius: 5px;
     width: calc(100% - 20px);
+    cursor: pointer;
 }
 
 

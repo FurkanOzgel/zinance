@@ -36,6 +36,7 @@ nav {
 
 #log-in:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 
@@ -83,6 +84,7 @@ nav {
 
 #sing-up:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 p {
@@ -264,4 +266,5 @@ p {
 
 #bottom-btn:hover {
     background-color: #1E2732;
+    cursor: pointer;
 }

@@ -21,6 +21,12 @@ const router = createRouter({
       name: 'signup',
       component: () => import('../views/SignupView.vue'),
       meta: { title: 'Kayıt Ol | Zinance' } 
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/DashboardView.vue'),
+      meta: { title: 'Dashboard | Zinance' } 
     }
   ]
 })

@@ -33,6 +33,7 @@
 
 .sidenav a:hover {
     color: white;
+    cursor: pointer;
 }
 
 
