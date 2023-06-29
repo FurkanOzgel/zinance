@@ -99,7 +99,7 @@
       </div>
     </div>
     <div id="bottom">
-      <button id="bottom-btn">Başlayın</button>
+      <router-link id="bottom-btn" to="/signup">Başlayın</router-link>
     </div>
   </div>
   

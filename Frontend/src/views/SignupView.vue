@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios'
-import router from '../router';
+import { validate } from 'email-validator';
 </script>
 
 <style src="../assets/style/authentication.css" scoped>
@@ -22,7 +22,7 @@ import router from '../router';
   </div>
   <div class="form-row">
     <div class="password-div">
-      <input :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
+      <input placeholder="Parola" :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
       <div class="eye-icon" @mousedown="togglePasswordVisibility" @mouseup="togglePasswordVisibility">
         <img src="../assets/images/visible.svg" draggable="false" v-show="!showPassword">
         <img src="../assets/images/non_visible.svg" draggable="false" v-show="showPassword">
@@ -50,6 +50,7 @@ export default {
     }
   },
   methods: {
+
     togglePasswordVisibility() {
       this.showPassword = !this.showPassword;
     },
@@ -62,37 +63,43 @@ export default {
       const password = this.$refs.password.value
       const re_password = this.$refs.re_password.value
 
-      if(password == re_password){
 
-        const post_data = {
-          first_name: first_name,
-          last_name: last_name,
-          birth_date: birth_date,
-          email: email,
-          password: password
-        }
-  
-        axios.post('http://127.0.0.1:8000/api/auth/register', post_data)
-          .then(response => {
-            console.log("push")
-            this.$router.push('/login');
-          })
-          .catch(error => {
-            console.log(error.response.data)
-            try{
-              if(error.response.data.email[0] == "user with this email already exists.") {
-                this.error_message = "Email adresi zaten bir hesaba ait."
-              }else{
+      if(!validate(email)){
+        this.error_message = "Geçerli bir mail adresi giriniz!"
+      }else{
+        this.error_message = ""
+        if(password == re_password){
+
+          const post_data = {
+            first_name: first_name,
+            last_name: last_name,
+            birth_date: birth_date,
+            email: email,
+            password: password
+          }
+    
+          axios.post('http://127.0.0.1:8000/api/auth/register', post_data)
+            .then(response => {
+              console.log("push")
+              this.$router.push('/login');
+            })
+            .catch(error => {
+              console.log(error.response.data)
+              try{
+                if(error.response.data.email[0] == "user with this email already exists.") {
+                  this.error_message = "Email adresi zaten bir hesaba ait."
+                }else{
+                  this.error_message = "Boş kutucuları doldurun."
+                }
+              }catch{
                 this.error_message = "Boş kutucuları doldurun."
               }
-            }catch{
-              this.error_message = "Boş kutucuları doldurun."
-            }
-            
-          });
+              
+            });
 
-      }else{
-        this.error_message = "Parolalar birbiriyle eşleşmiyor!"
+        }else{
+          this.error_message = "Parolalar birbiriyle eşleşmiyor!"
+        }
       }
 
     }

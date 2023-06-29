@@ -249,6 +249,7 @@ p {
 }
 
 #bottom-btn {
+    text-decoration: none;
     color:white;
     display: flex;
     align-items: center;
@@ -265,6 +266,6 @@ p {
 }
 
 #bottom-btn:hover {
-    background-color: #1E2732;
+    background-color: black;
     cursor: pointer;
 }

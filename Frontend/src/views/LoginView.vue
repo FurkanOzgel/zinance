@@ -14,7 +14,7 @@ import axios from 'axios'
   </div>
   <div class="form-row">
     <div class="password-div">
-      <input :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
+      <input placeholder="Parola" :type="showPassword ? 'text' : 'password'" class="password-input" name="password" ref="password">
       <div class="eye-icon" @mousedown="togglePasswordVisibility" @mouseup="togglePasswordVisibility">
         <img src="../assets/images/visible.svg" draggable="false" v-show="!showPassword">
         <img src="../assets/images/non_visible.svg" draggable="false" v-show="showPassword">
@@ -53,7 +53,8 @@ export default {
 
       axios.post('http://127.0.0.1:8000/api/auth/login', post_data)
         .then(response => {
-          this.$cookies.set('jwt', response.data.jwt, '1y');
+          this.$cookies.set('jwt', response.data.jwt, '60d');
+          this.$router.push("/dashboard")
         })
         .catch(error => {
           this.error_message = error.response.data.detail
