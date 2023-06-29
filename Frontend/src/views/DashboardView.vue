@@ -1,3 +1,9 @@
+<script setup>
+
+import Sidebar from '../components/Sidebar.vue';
+
+</script>
+
 <template>
-    dashboard
+  <Sidebar activeMenu="dashboard"/>
 </template>
