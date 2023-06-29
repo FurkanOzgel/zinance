@@ -33,7 +33,7 @@ class LoginView(APIView):
 
         payload = {
             "id": user.id,
-            "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+            "exp": datetime.datetime.utcnow() + datetime.timedelta(days=60),
             "iat": datetime.datetime.utcnow()
         }
 
@@ -54,6 +54,7 @@ class UserView(APIView):
         if not token:
             raise exceptions.AuthenticationFailed("Unauthenticated!")
 
+        payload = jwt.decode(token, "secret", algorithms=["HS256"])
 
         try:
             payload = jwt.decode(token, "secret", algorithms=["HS256"])
