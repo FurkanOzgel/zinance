@@ -54,6 +54,7 @@ class UserView(APIView):
         if not token:
             raise exceptions.AuthenticationFailed("Unauthenticated!")
 
+
         try:
             payload = jwt.decode(token, "secret", algorithms=["HS256"])
         except jwt.ExpiredSignatureError:
@@ -63,7 +64,11 @@ class UserView(APIView):
         user = User.objects.filter(id = payload["id"]).first()
         serializer = UserSerializer(user)
 
-        return Response(serializer.data)
+        response =  Response(serializer.data)
+        response['Access-Control-Allow-Origin'] = 'http://127.0.0.1:5173'
+
+
+        return response
 
 class LogoutView(APIView):
     def get(self, request):
