@@ -51,7 +51,7 @@ export default {
         'password': password
       }
 
-      axios.post('http://127.0.0.1:8000/api/auth/login', post_data)
+      axios.post('http://127.0.0.1:8000/auth/login', post_data)
         .then(response => {
           this.$cookies.set('jwt', response.data.jwt, '60d');
           this.$router.push("/dashboard")

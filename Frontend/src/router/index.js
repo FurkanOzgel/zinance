@@ -35,7 +35,7 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
   document.title = to.meta.title || 'Zinance'; // Değiştirilecek başlık
 
-  await axios.get("http://127.0.0.1:8000/api/auth/user", {
+  await axios.get("http://127.0.0.1:8000/auth/user", {
     withCredentials: true
   })
   .then(response => { //Authenticated

@@ -78,7 +78,7 @@ export default {
             password: password
           }
     
-          axios.post('http://127.0.0.1:8000/api/auth/register', post_data)
+          axios.post('http://127.0.0.1:8000/auth/register', post_data)
             .then(response => {
               console.log("push")
               this.$router.push('/login');
