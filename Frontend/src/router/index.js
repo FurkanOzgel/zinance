@@ -28,6 +28,24 @@ const router = createRouter({
       name: 'dashboard',
       component: () => import('../views/DashboardView.vue'),
       meta: { title: 'Dashboard | Zinance', requireAuth: 1 } 
+    },
+    {
+      path: '/markets',
+      name: 'markets',
+      component: () => import('../views/MarketsView.vue'),
+      meta: { title: 'Piyasalar | Zinance', requireAuth: 1 } 
+    },
+    {
+      path: '/blogs',
+      name: 'blogs',
+      component: () => import('../views/BlogsView.vue'),
+      meta: { title: 'Bloglar | Zinance', requireAuth: 1 } 
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: () => import('../views/InfoView.vue'),
+      meta: { title: 'Yardım | Zinance', requireAuth: 1 } 
     }
   ]
 })

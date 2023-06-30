@@ -7,7 +7,7 @@ const props = defineProps(['activeMenu'])
 
 <div id="mySidenav" class="sidenav">
   <div id="profile-container">
-      <img id="profile-img" src="../images/profile.jpg">
+      <img id="profile-img" src="../assets/images/profile.jpg">
   </div>
   <div id="link-container">
     <router-link to="/dashboard" :class="{'active': props.activeMenu === 'dashboard'}">
