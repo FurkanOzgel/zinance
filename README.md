@@ -1,4 +1,4 @@
-![Logo]([https://github.com/FurkanOzgel/zinance/blob/vue-conversion/screenshots/zinance_logo.jpeg?raw=true])
+<img src="https://raw.githubusercontent.com/FurkanOzgel/zinance/vue-conversion/screenshots/zinance_logo.jpeg">
 
 
 ## İçindekiler
